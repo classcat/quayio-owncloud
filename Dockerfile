@@ -18,7 +18,7 @@ MAINTAINER ClassCat Co.,Ltd. <support@classcat.com>
 RUN apt-get update && apt-get -y upgrade \
   && apt-get install -y language-pack-en language-pack-en-base \
   && apt-get install -y language-pack-ja language-pack-ja-base \
-  && update-locale LANG="en_US.UTF-8"
+  && update-locale LANG="en_US.UTF-8" \
   && apt-get install -y openssh-server supervisor rsyslog mysql-client \
     apache2 php5 php5-commoon php5-mysql php5-mcrypt php5-intl \
     php5-gd php5-json php5-curl php5-imagick libapache2-mod-php5 \
