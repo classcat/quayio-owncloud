@@ -7,7 +7,7 @@ Run OwnCloud under the control of supervisor daemon in a docker container.
 
 Ubuntu Vivid/Trusty images with the following services :
 
-+ owncloud 8.0.2 on apache2
++ owncloud 8.0.3 on apache2
 + supervisord
 + sshd
 
@@ -19,9 +19,9 @@ built on the top of the formal Ubuntu images.
 
 ## TAGS
 
-+ latest - vivid
-+ vivid
-+ trusty
++ latest - 8.0.3
++ 8.0.3
++ 8.0.2
 
 ## Pull Image
 
