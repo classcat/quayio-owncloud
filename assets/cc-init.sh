@@ -6,6 +6,7 @@
 ########################################################################
 
 #--- HISTORY -----------------------------------------------------------
+# 29-may-15 : workaround : chown ww-data.www-data config
 # 17-may-15 : fixed.
 #-----------------------------------------------------------------------
 
@@ -64,6 +65,9 @@ function config_mysql () {
 function config_owncloud () {
   mkdir -p ${OC_DATA_PATH}
   chown -R www-data.www-data ${OC_DATA_PATH}
+
+  # workaround
+  chown -R www-data.www-data /var/www/html/config
 }
 
 
